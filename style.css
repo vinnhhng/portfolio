@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #eee6e6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: rgb(134, 133, 133);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("images/back2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero h2 span {
+    color: #e3e5e9;
+}
+
+.hero p {
+    margin: 10px 0 30px;
+    font-size: 20px;
+}
+
+
+.about {
+    padding-top: 0;
+    margin: 0;
+    padding: 60px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 80vh;
+    background-image: url("images/about_back.jpg");
+    background-size: cover;
+    background-position: center;
+    gap: 40px;
+    height: 80vh; 
+}
+
+.about-box {
+    width: 30%;               
+    max-width: 450px;         
+    margin-left: 60px;        
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.75); 
+    border: 2px solid #545658; 
+    border-radius: 10px;
+    color: white;
+    font-size: 10px;
+    line-height: 0.5;
+    backdrop-filter: blur(4px);
+}
+
+.about-box h2 {
+    color: #4db6ac; /* teal text */
+    border-bottom: 2px solid #4db6ac;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 2px;
+    color: #eee;
+}
+
+.second-box {
+    width: 20%;
+    max-width: 350px;
+    margin-right: -400px;
+    padding: 20px;
+    
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid #545658;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.school-name {
+    text-align: center;
+}
+
+.social-links {
+    text-align: center;
+    width: 100%; 
+}
+.social-links a i {
+    font-size: 30px; 
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0066ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #004fcc;
+}
+
+/* SECTIONS */
+.section {
+    padding: 90px 80px;
+    text-align: center;
+}
+
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects{
+    background-image: url("images/building.jpg");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0;
+    margin-top: 0px;
+    color: white;
+    font-size: 16px;
+
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid #545658;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+   
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.knowledge{
+    background-image: url("images/knowledge.jpg");
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
+
+}
+
+.knowledge-grid-two-cols {
+    display: flex;
+    justify-content: center; 
+    gap: 10rem;
+    padding: 1rem;
+    max-width: 900px; 
+    margin: auto; 
+}
+
+
+.knowledge-textbox {
+    background-color: rgba(0, 0, 0, 0.75); 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.knowledge-textbox h3 {
+    color: #f1eded;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    width: 450px;
+}
+
+.knowledge-textbox ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    column-count: 2; 
+    column-gap: 2rem;
+}
+
+.knowledge-textbox ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .knowledge-grid-two-cols {
+        flex-direction: column;
+    }
+}
+
+.contact {
+    background-image: url("images/contact.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 40vh;               
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    align-items: center;         
+    text-align: center;
+    color: white;               
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;  
+    margin-top: 20px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;   
+    gap: 15px;                
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;               
+    font-size: 22px;
+    color: white;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: white;
+}
+
+.contact-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-item a:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 60px 30px;
+    }
+}
