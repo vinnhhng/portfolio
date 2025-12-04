@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    color: #eee6e6;
+    color: #faf8f8;
 }
 
 /* NAVBAR */
@@ -52,7 +52,7 @@ body {
 }
 
 .hero h2 span {
-    color: #e3e5e9;
+    color: #faf8f8;
 }
 
 .hero p {
@@ -154,7 +154,7 @@ body {
     background: #004fcc;
 }
 
-/* SECTIONS */
+
 .section {
     padding: 90px 80px;
     text-align: center;
@@ -206,6 +206,110 @@ body {
 
 .project-card:hover {
     transform: translateY(-5px);
+}
+
+
+.qualifications {
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
+    background-image: url("images/textbook.jpg");
+
+}
+
+.grid-three-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+    margin-right: 80px;
+}
+
+.textbox {
+    background-color: rgba(0, 0, 0, 0.75); 
+    padding: 20px 25px;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-size: 1.2rem;
+}
+
+.textbox h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    gap: 20px;
+}
+
+.textbox ul {
+    list-style: none;
+    padding: 0;
+}
+
+.textbox li {
+    padding: 4px 0;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+    .grid-three-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-three-cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.link-button {
+    padding: 5px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #45a049;
+}
+
+.diploma-button {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.diploma-button:hover {
+    background-color: #45a049;
+}
+
+.certifications-button {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.certifications:hover {
+    background-color: #45a049;
 }
 
 .knowledge{
