@@ -166,7 +166,7 @@ body {
     margin-bottom: 20px;
 }
 
-.projects{
+/* .projects{
     background-image: url("images/building.jpg");
     height: 80vh;
     width: 100%;
@@ -201,23 +201,105 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: 0.3s;
-   
 }
 
 .project-card:hover {
     transform: translateY(-5px);
 }
+*/
 
-
-.qualifications {
-    height: 60vh;
+.projects {
+    position: relative; 
+    height: 80vh;
     width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0;
+    margin-top: 0px;
+    color: white;
+    font-size: 16px;
+
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid #545658;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.projects::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("images/building.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    backdrop-filter: blur(4px);
-    background-image: url("images/textbook.jpg");
 
+    filter: blur(4px); 
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.projects > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
+.qualifications {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background-image: url("images/textbook.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.qualifications::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    transform: scale(1.1); 
+    z-index: 1;
+}
+
+
+.qualifications > * {
+    position: relative;
+    z-index: 2;
+}
+.qualifications > h2 {
+    color: rgb(10, 10, 10); 
 }
 
 .grid-three-cols {
@@ -363,6 +445,11 @@ body {
     padding: 0.5rem 0;
     border-bottom: 1px solid #eee;
 }
+
+.knowledge > h2 {
+    color: white; 
+}
+
 
 @media (max-width: 768px) {
     .knowledge-grid-two-cols {
